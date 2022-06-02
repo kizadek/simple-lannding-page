@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -13,4 +14,69 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Background */
+
+.background {
+  background-image: url('../public/assets/bg.png');
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+}
+
+.texture {
+  background-image: url('../public/assets/texture.png');
+  background-attachment: fixed;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.container-top {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 30px !important;
+  margin-right: 10px !important;
+}
+
+.section-top {
+  min-width: 90vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-top-right {
+  background-color: rgba(247, 245, 245, 0.503);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.section-top-right h2 {
+  font-weight: 600;
+}
+
+.section-top-right h1 {
+  font-weight: 60px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.section-top-right h6 {
+  font-weight: 700;
+  color: brown;
+  letter-spacing: 5px;
+}
+
+.btn-custom {
+  background-color: tomato;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  color: #fff;
 }
